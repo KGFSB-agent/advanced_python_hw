@@ -1,0 +1,132 @@
+Задание 2. Написать упрощенный вариант утилиты `tail` -- скрипт, выводящий в `stdout` последние 10 строк каждого из переданных файлов.
+
+- Если передано больше одного файла, то перед обработкой очередного файла необходимо вывести его имя (скрипт должен повторять форматирование);
+- Если не передано ни одного файла, то нужно вывести последние 17 строк из `stdin`.
+
+Вариант 1 (передадим 1 файл)
+Введём текстовый файл "text_2.txt", который выглядит следующим образом:
+"Test 1
+Test 2
+Test 3
+Test 4
+Test 5
+Test 6 
+Test 7
+Test 8
+Test 9
+Test 10
+Test 11
+Test 12
+Test 13
+Test 14
+Test 15
+Test 16
+Test 17
+Test 18
+Test 19
+Test 20"
+
+Ввод: "python hw_1\task_1_2.py hw_1\inputs\text_2.txt"
+
+Вывод:
+"==> text_2.txt <==
+Test 11
+Test 12
+Test 13
+Test 14
+Test 15
+Test 16
+Test 17
+Test 18
+Test 19
+Test 20"
+
+Вариант 2 (передадим 2 файла)
+Помимо текстового файла "text_2.txt" также введём "text_3.txt" который выглядит следующим образом:
+"
+Test 1
+Test 2
+
+Test 3
+Test 4
+
+
+Test 5
+Test 6
+Test 7
+
+Test 8
+Test 9
+Test 10
+Test 11
+
+Test 12
+Test 13"
+
+Ввод: "python hw_1\task_1_2.py hw_1\inputs\text_2.txt hw_1\inputs\text_3.txt"
+
+Вывод:
+"==> text_2.txt <==
+Test 11
+Test 12
+Test 13
+Test 14
+Test 15
+Test 17
+Test 18
+Test 19
+Test 20
+
+==> text_3.txt <==
+Test 6
+Test 7
+
+Test 8
+Test 9
+Test 10
+Test 11
+
+Test 12
+Test 13"
+
+Вариант 3 (не передаём файлы)
+Введём следующие произвольные данные и в коце прожмём комбинацию клавиш "Ctrl + Z":
+"Test 1 
+Test 2 
+Test 3 
+Test 4 
+Test 5 
+Test 6 
+Test 7 
+Test 8 
+Test 9 
+Test 10
+Test 11
+Test 12
+Test 13
+Test 14
+Test 15 
+Test 16
+Test 17
+Test 18
+Test 19"
+
+Вывод:
+"Test 3
+Test 4
+Test 5
+Test 6
+Test 7
+Test 8
+Test 9
+Test 10
+Test 11
+Test 12
+Test 13
+Test 14
+Test 15
+Test 16
+Test 17
+Test 18
+Test 19"
+Как мы видим, после прожимания комбинацию клавиш "Ctrl + Z", нам вывелся ответ в виде последних введённых 17 строк
