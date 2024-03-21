@@ -1,0 +1,4 @@
+services:
+  latex-to-pdf:
+    build: .
+    container_name: latex-to-pdf

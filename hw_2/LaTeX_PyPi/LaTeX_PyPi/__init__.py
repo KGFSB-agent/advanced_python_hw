@@ -1,0 +1,1 @@
+from .LaTeX_img_tab import *

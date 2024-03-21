@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+LaTeX_PyPi/LaTeX_img_tab.py
+LaTeX_PyPi/__init__.py
+LaTeX_PyPi.egg-info/PKG-INFO
+LaTeX_PyPi.egg-info/SOURCES.txt
+LaTeX_PyPi.egg-info/dependency_links.txt
+LaTeX_PyPi.egg-info/top_level.txt

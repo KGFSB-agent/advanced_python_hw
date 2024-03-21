@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: LaTeX_PyPi
+Version: 0.3
+Summary: This is the simplest module for working with tables and images in LaTeX
+Author: puzyriok
+Author-email: sacrumterra@yandex.ru
+Requires-Python: >=3.8
+
+# LaTeX_img_tab #
+This module is a training and homework assignment for Python + LaTeX (generating tables and images)
